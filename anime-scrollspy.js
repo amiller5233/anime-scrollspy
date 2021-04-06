@@ -26,7 +26,7 @@ class AnimeScrollspyElement {
 	}
 
 	get scrollTop() {
-		return $(this.target).position().top
+		return $(this.target)[0].getBoundingClientRect().top + window.pageYOffset
 	}
 }
 
