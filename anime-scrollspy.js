@@ -32,4 +32,5 @@ class AnimeScrollspyElement {
 
 const anime_scrollspy = new AnimeScrollspy()
 
+window.addEventListener('load', function(e){ anime_scrollspy.scroll() })
 document.addEventListener('scroll', function(e){ anime_scrollspy.scroll() })
